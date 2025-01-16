@@ -178,3 +178,82 @@
   padding: 8px 12px;
   border-radius: 100%;
 }
+
+.groupBtn:hover {
+  background-color: #31D2F2;
+  color: rgb(255, 255, 255);
+  border-radius: 5px !important;
+}
+.appImage {
+  position: relative;
+  overflow: hidden;
+}
+.imageHover {
+  opacity: 0;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  padding: 15px;
+  color: rgb(5, 5, 5);
+}
+.appImage:hover .imageHover {
+  opacity: 1;
+  bottom: 0;
+}
+.heading {
+  font-size: 18px;
+}
+.discription {
+  font-size: 14px;
+}
+.formStyle {
+  background: white;
+  padding: 5px 10px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: 0px;
+  border: 1px solid rgb(169, 163, 163);
+  border-right: 0px;
+}
+.formStyle:focus {
+  border: 1px solid red;
+}
+.button {
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  background: #cb0808;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0px;
+}
+.footCopyrightSection {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  /* letter-spacing: 2px; */
+  line-height: 15px;
+}
+.footCopyrightSection a {
+  color: #fe0000;
+  text-decoration: none;
+  font-size: 15px;
+}
+hr {
+  color: #ffffff;
+  height: 1.5px;
+  background-color: #ffffff;
+}
+.float-end {
+  position: relative;
+}
+
+.float-end button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
