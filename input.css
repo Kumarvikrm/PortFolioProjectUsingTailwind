@@ -257,3 +257,40 @@ hr {
   right: 20px;
   z-index: 2;
 }
+
+/* contact section */
+
+.contect-card{
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 50px 30px;
+  transition: 0.3s;
+}
+.contect-icon{
+  background: #ecfafd;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 50px;
+  color: #00cdfa;
+  transition: ease 0.3s;
+}
+
+.contect-icon:hover{
+  background: #0499bb;
+  color: #ffffff;
+} 
+.contect-card button[type=submit] {
+  color: #ffffff;
+  background: #0499bb;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border: 0px;
+  border-radius: 50px;
+  width: 50%;
+  &:hover{
+    background-color: #00d0ff;
+  }
+}
