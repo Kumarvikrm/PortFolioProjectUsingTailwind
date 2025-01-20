@@ -14,6 +14,24 @@
 .nav-item:hover > a {
   color: #36cfd7;
 }
+.nav-item {
+  position: relative;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  width: 0;
+  height: 2px;
+  background-color: #36cfd7;
+  transition: width 0.3s ease-in-out;
+}
+.nav-item:hover::after {
+  width: 60%;
+  background-color: #36cfd7;
+}
+
 .deepDropDown {
   position: absolute;
   top: 37%;
@@ -290,7 +308,7 @@ hr {
   transition: ease 0.3s;
 }
 
-.contactBg:hover .contect-icon{
+.contactBg:hover .contect-icon {
   background: #0499bb;
   color: #ffffff;
 }
@@ -326,3 +344,18 @@ hr {
   background-color: #34b7a7;
   transition: width 0.6s ease;
 }
+
+/* .progress-bar-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  width: 0;
+  height: 2px;
+  background-color: #36cfd7;
+  transition: width 0.3s ease-in-out;
+}
+.progress-bar-wrap:hover {
+  width: 100%;
+  background-color: #36cfd7;
+} */
