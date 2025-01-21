@@ -344,18 +344,16 @@ hr {
   background-color: #34b7a7;
   transition: width 0.6s ease;
 }
-
-/* .progress-bar-wrap::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 8px;
-  width: 0;
-  height: 2px;
-  background-color: #36cfd7;
-  transition: width 0.3s ease-in-out;
+.arrowContainer{
+  float: right;
+  position: relative;
 }
-.progress-bar-wrap:hover {
-  width: 100%;
-  background-color: #36cfd7;
-} */
+.arrowContainer > button{
+  border: 0px;
+  color: #ececec;
+  padding: 8px 10px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

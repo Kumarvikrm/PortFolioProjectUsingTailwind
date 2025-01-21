@@ -15,9 +15,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand fs-3 fw-light" href="#">KELLY</a>
+        <a class="navbar-brand fs-3 fw-normal" href="#">KELLY</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,21 +25,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto gap-2">
             <li class="nav-item">
-              <a class="nav-link fw-semibold underLine" aria-current="page" href="#">Home</a>
+              <a class="nav-link fw-semibold underLine" aria-current="page" href="#bannerSection">Home</a>
               <div class="borderLine"></div>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">About</a>
+              <a class="nav-link fw-semibold" href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Resume</a>
+              <a class="nav-link fw-semibold" href="#resumeSection">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Service</a>
+              <a class="nav-link fw-semibold" href="#serviceSection">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Portfolio</a>
+              <a class="nav-link fw-semibold" href="#portfolioSection">Portfolio</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button">
@@ -63,7 +63,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Contact</a>
+              <a class="nav-link fw-semibold" href="#contactSection">Contact</a>
             </li>
           </ul>
           <div class="mb-2">
@@ -80,7 +80,7 @@
 
   <main>
     <!-- Banner Section -->
-    <section>
+    <section id="bannerSection">
       <div class="banner-container">
         <div class="container">
           <div class="row">
@@ -99,7 +99,7 @@
     </section>
 
     <!-- Service Section -->
-    <section class="position-relative mt-5 mb-5">
+    <section id="serviceSection" class="position-relative mt-5 mb-5">
       <div class="container">
         <div class="row gy-3">
           <div class="col-12 text-center mb-5">
@@ -216,7 +216,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="mb-5">
+    <section id="portfolioSection" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
@@ -321,7 +321,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="mb-5">
+    <section id="aboutSection" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -453,7 +453,7 @@
     </section>
 
     <!-- Resume Section -->
-    <section class="mb-5">
+    <section id="resumeSection" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -534,7 +534,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="mb-5">
+    <section id="contactSection" class="mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -639,6 +639,11 @@
             </div>
             <p class="footerCopyright">Designed by <span class="footerSpan">BootstrapMade</span> Distributed by <span
                 class="footerSpan">ThemeWagon</span></p>
+          </div>
+          <div class="arrowContainer">
+            <button class="btn btn-info">
+             <a class="arrow" href="#bannerSection"><i class="bi bi-arrow-up text-light"></i></a>
+            </button>
           </div>
         </div>
       </div>
